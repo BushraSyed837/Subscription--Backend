@@ -5,8 +5,7 @@ const PORT = process.env.PORT || 8000;
 const weatherRoutes = require('./routes/weather');
 const userRoutes = require('./routes/user');
 require('./db');
-require('dotenv').config();
-console.log(process.env.MONGODB_URI);
+
 
 // Middleware
 app.use(express.json());

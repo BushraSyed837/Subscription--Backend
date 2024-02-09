@@ -3,8 +3,6 @@ const router = express.Router();
 const User = require("../model/user");
 const axios = require("axios");
 
-const { MongoClient } = require("mongodb");
-
 router.post("/google/auth", async (req, res) => {
   const { accessToken } = req.body;
   try {
