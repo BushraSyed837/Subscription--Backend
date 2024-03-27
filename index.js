@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const PORT = process.env.PORT || 8000;
-const weatherRoutes = require('./routes/weather');
+const weatherRoutes = require('./routes/subscription');
 const userRoutes = require('./routes/user');
 require('./db');
 

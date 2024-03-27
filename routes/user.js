@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../model/user");
+const User = require("../model/subscription");
 const axios = require("axios");
 
 router.post("/google/auth", async (req, res) => {
