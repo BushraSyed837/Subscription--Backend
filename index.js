@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const PORT = process.env.PORT || 8000;
-const weatherRoutes = require('./routes/subscription');
-const userRoutes = require('./routes/user');
+const subscriptionRoutes = require('./routes/subscription');
 require('./db');
 
 
@@ -15,8 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Routes
-app.use('/api', weatherRoutes);
-app.use('/api', userRoutes);
+app.use('/api', subscriptionRoutes);
 
 // Start server
 app.listen(PORT, () => {
